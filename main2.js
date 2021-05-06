@@ -77,7 +77,8 @@ function addBanana(displacement){
         action.play();
         animate();
     },null,(err)=> console.log(err));
-    //master
+    //main
+
 }
 for (var i = -2; i < 3; i++) {
     addBanana(i)
