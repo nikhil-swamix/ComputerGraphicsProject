@@ -76,10 +76,8 @@ function addBanana(displacement){
         scene.add( model );
         action.play();
         animate();
-        // console.log(model)
-
     },null,(err)=> console.log(err));
-
+    //master
 }
 for (var i = -2; i < 3; i++) {
     addBanana(i)
