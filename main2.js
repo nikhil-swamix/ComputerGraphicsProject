@@ -86,6 +86,7 @@ for (var i = -2; i < 3; i++) {
 }
 
 function addDog() {
+    
 }
 // const fontJson = require('https://unpkg.com/three@0.77.0/examples/fonts/gentilis_regular.typeface.json')
 // const font = new THREE.Font( fontJson );
