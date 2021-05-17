@@ -5,6 +5,9 @@
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<title>Banana Dance Demo</title>
 		<style type="text/css">
+			body{
+				background: url(https://i.pinimg.com/originals/0b/06/39/0b06397a3199bee4a5922ee4488ebf5a.jpg);
+			}
 			* {
 				margin: 0;
 				padding: 0;
@@ -25,6 +28,8 @@
 
 			.heading {
 				text-align: center;
+				background-color: #fff;
+				/*border-radius: 1em;*/
 			}
 
 		</style>
@@ -66,13 +71,11 @@
 				});
 				xhr.send();
 			}
-
-
 			document.documentElement.scrollTop = 0;
 			window.addEventListener('load', () => {
 				document.querySelector('button').addEventListener('click', function() {
-					setTimeout(demo2 ,100);
-					setTimeout(xhrMusicPlay ,0);
+					demo2()
+					setTimeout(xhrMusicPlay ,10);
 				});
 			});
 

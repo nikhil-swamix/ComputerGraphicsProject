@@ -14,6 +14,7 @@ var backtexture = "https://raw.githubusercontent.com/pizza3/asset/master/color3.
 var skullmodel = "./banana/out.glb";
 var skullmodel = "https://raw.githubusercontent.com/pizza3/asset/master/skull5.obj";
 var skullmodel = "./man.obj";
+// var skullmodel = "https://people.sc.fsu.edu/~jburkardt/data/obj/lamp.obj";
 var voronoi = "https://raw.githubusercontent.com/pizza3/asset/master/rgbnoise2.png";
 
 var scene,
@@ -317,7 +318,6 @@ void main() {
 `;
 function init() {
 	container = document.getElementById("world");
-
 	camera = new THREE.PerspectiveCamera(30, window.innerWidth/2 / window.innerHeight, 1, 10000 );
 	camera.position.z = 100;
 	cameraRTT = new THREE.PerspectiveCamera(30, window.innerWidth/2 / window.innerHeight, 1, 10000 );
@@ -422,8 +422,8 @@ function planeback() {
 function loadWatermark (scene)  {
 	var scene;
 	console.log(scene)
-	const loader = new THREE.FontLoader();
 	// const fonturl = 'https://unpkg.com/three@0.77.0/examples/fonts/gentilis_regular.typeface.json'
+	const loader = new THREE.FontLoader();
 	const fonturl = 'https://unpkg.com/three@0.77.0/examples/fonts/optimer_bold.typeface.json'
 	var textmesh =loader.load( fonturl, function ( response ) {
 		const font = response;
